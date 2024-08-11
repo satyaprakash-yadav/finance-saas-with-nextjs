@@ -22,6 +22,13 @@
       "when": 1723284960660,
       "tag": "0002_bitter_talisman",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1723397551574,
+      "tag": "0003_white_firebird",
+      "breakpoints": true
     }
   ]
 }
