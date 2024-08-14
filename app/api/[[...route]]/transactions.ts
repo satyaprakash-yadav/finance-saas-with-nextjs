@@ -9,8 +9,6 @@ import { transactions, insertTransactionSchema, categories, accounts } from "@/d
 
 import { zValidator } from "@hono/zod-validator";
 import { clerkMiddleware, getAuth } from "@hono/clerk-auth";
-// import { HTTPException } from "hono/http-exception"
-
 
 const app = new Hono()
     .get(

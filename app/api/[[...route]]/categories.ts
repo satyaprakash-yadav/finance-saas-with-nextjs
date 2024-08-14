@@ -8,8 +8,6 @@ import { categories, insertCategorySchema } from "@/db/schema";
 import { zValidator } from "@hono/zod-validator";
 import { clerkMiddleware, getAuth } from "@hono/clerk-auth";
 import { z } from "zod";
-// import { HTTPException } from "hono/http-exception"
-
 
 const app = new Hono()
     .get(
@@ -20,9 +18,6 @@ const app = new Hono()
 
             if (!auth?.userId) {
                 return c.json({ error: "Unauthorized" }, 401);
-                // throw new HTTPException(401, {
-                //     res: c.json({ error: "Unauthorized" }, 401),
-                // });
             }
 
             const data = await db.select({
