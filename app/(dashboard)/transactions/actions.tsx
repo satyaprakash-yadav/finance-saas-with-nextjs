@@ -1,7 +1,7 @@
 "use client";
 
-import { useDeleteCategory } from "@/features/categories/api/use-delete-category";
-import { useOpenCategory } from "@/features/categories/hooks/use-open-category";
+import { useOpenTransaction } from "@/features/transactions/hooks/use-open-transaction";
+import { useDeleteTransaction } from "@/features/transactions/api/use-delete-transaction";
 
 import { useConfirm } from "@/hooks/use-confirm";
 import { Button } from "@/components/ui/button";
@@ -21,11 +21,11 @@ type Props = {
 export const Actions = ({ id }: Props) => {
   const [ConfirmDialog, confirm] = useConfirm(
     "Are you sure?",
-    "You are about to delete this category."
+    "You are about to delete this transaction."
   );
 
-  const { onOpen } = useOpenCategory();
-  const deleteMutation = useDeleteCategory(id);
+  const { onOpen } = useOpenTransaction();
+  const deleteMutation = useDeleteTransaction(id);
 
   const handleDelete = async () => {
     const ok = await confirm();

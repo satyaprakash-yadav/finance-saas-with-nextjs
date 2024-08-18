@@ -47,7 +47,7 @@ const app = new Hono()
                 amount: transactions.amount,
                 notes: transactions.notes,
                 account: accounts.name,
-                accounId: transactions.accountId,
+                accountId: transactions.accountId,
             })
                 .from(transactions)
                 .innerJoin(accounts, eq(transactions.accountId, accounts.id))
@@ -89,13 +89,13 @@ const app = new Hono()
                 payee: transactions.payee,
                 amount: transactions.amount,
                 notes: transactions.notes,
-                accounId: transactions.accountId,
+                accountId: transactions.accountId,
             })
                 .from(transactions)
                 .innerJoin(accounts, eq(transactions.accountId, accounts.id))
                 .where(
                     and(
-                        eq(transactions.id, auth.userId),
+                        eq(transactions.id, id),
                         eq(accounts.userId, auth.userId),
                     ),
                 );
