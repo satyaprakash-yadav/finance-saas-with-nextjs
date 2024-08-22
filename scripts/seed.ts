@@ -72,7 +72,7 @@ const generateTransactionsForDay = (day: Date) => {
 const generateTransactions = () => {
     const days = eachDayOfInterval({ start: defaultFrom, end: defaultTo });
     days.forEach(day => generateTransactionsForDay(day));
-};
+};  
 
 generateTransactions();
 
