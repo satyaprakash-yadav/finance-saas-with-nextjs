@@ -1,33 +1,12 @@
 {
-  "version": "5",
-  "dialect": "pg",
+  "version": "7",
+  "dialect": "postgresql",
   "entries": [
     {
       "idx": 0,
-      "version": "5",
-      "when": 1723097101090,
-      "tag": "0000_many_dakota_north",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "5",
-      "when": 1723097820991,
-      "tag": "0001_minor_donald_blake",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "5",
-      "when": 1723284960660,
-      "tag": "0002_bitter_talisman",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "5",
-      "when": 1723397551574,
-      "tag": "0003_white_firebird",
+      "version": "7",
+      "when": 1724390467510,
+      "tag": "0000_pretty_molten_man",
       "breakpoints": true
     }
   ]
