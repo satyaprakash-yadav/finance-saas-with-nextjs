@@ -15,6 +15,13 @@
       "when": 1724905681921,
       "tag": "0001_watery_phil_sheldon",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1724992417355,
+      "tag": "0002_public_mad_thinker",
+      "breakpoints": true
     }
   ]
 }
