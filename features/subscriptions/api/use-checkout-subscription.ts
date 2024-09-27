@@ -27,4 +27,4 @@ export const useCheckoutSubscription = () => {
     });
 
     return mutation;
-}
+};

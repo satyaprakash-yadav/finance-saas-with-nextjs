@@ -82,7 +82,6 @@ const app = new Hono()
                 },
             );
 
-            console.log(checkout);
             const checkoutUrl = checkout.data?.data.attributes.url;
 
             if (!checkoutUrl) {
@@ -134,7 +133,7 @@ const app = new Hono()
                     });
             };
 
-            if (event === "subsription_updated") {
+            if (event === "subscription_updated") {
                 await db
                     .insert(subscriptions)
                     .values({
